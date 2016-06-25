@@ -18,48 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6be-ik-hRD">
-                                <rect key="frame" x="58" y="285" width="485" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-W2-8VB" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="35" y="280" width="530" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="J2t-Cv-P5B"/>
+                                    <constraint firstAttribute="height" constant="40" id="M02-Ha-JNW"/>
                                 </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-W2-8VB">
-                                <rect key="frame" x="58" y="323" width="485" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XrH-Lv-exF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.070588235289999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15y-cu-L5r">
-                                <rect key="frame" x="229" y="527" width="142" height="30"/>
+                                <rect key="frame" x="35" y="535" width="530" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="Puh-V8-SVt"/>
-                                    <constraint firstAttribute="height" constant="30" id="fCo-mD-8XL"/>
+                                    <constraint firstAttribute="height" constant="50" id="cda-nF-9Q4"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <state key="normal" title="Authentificate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="auth:" destination="d77-tQ-EEl" eventType="touchUpInside" id="Unj-0S-DtS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6be-ik-hRD" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="35" y="232" width="530" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lEb-Jn-tIf"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.070588235289999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6be-ik-hRD" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="38" id="0ws-xg-xq6"/>
-                            <constraint firstItem="15y-cu-L5r" firstAttribute="centerX" secondItem="D5m-Y4-X8p" secondAttribute="centerX" id="15i-6f-Doi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IKQ-W2-8VB" secondAttribute="trailing" constant="37" id="FCu-uw-J8D"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6be-ik-hRD" secondAttribute="trailing" constant="37" id="GMN-s0-IOK"/>
-                            <constraint firstItem="6be-ik-hRD" firstAttribute="centerY" secondItem="D5m-Y4-X8p" secondAttribute="centerY" id="HtS-9f-8S2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IKQ-W2-8VB" secondAttribute="trailing" constant="15" id="1UW-Td-kH2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6be-ik-hRD" secondAttribute="trailing" constant="15" id="6eM-f8-2Fv"/>
+                            <constraint firstItem="IKQ-W2-8VB" firstAttribute="centerY" secondItem="D5m-Y4-X8p" secondAttribute="centerY" id="6nz-jc-pRk"/>
                             <constraint firstItem="xsl-PH-FUM" firstAttribute="top" secondItem="15y-cu-L5r" secondAttribute="bottom" constant="20" id="MbY-ko-Qnd"/>
-                            <constraint firstItem="IKQ-W2-8VB" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="38" id="QEi-Vo-cVc"/>
+                            <constraint firstItem="xsl-PH-FUM" firstAttribute="top" secondItem="15y-cu-L5r" secondAttribute="bottom" constant="15" id="Ogy-PB-xd7"/>
+                            <constraint firstItem="IKQ-W2-8VB" firstAttribute="top" secondItem="6be-ik-hRD" secondAttribute="bottom" constant="8" id="RI0-5J-eTI"/>
                             <constraint firstItem="15y-cu-L5r" firstAttribute="top" secondItem="IKQ-W2-8VB" secondAttribute="bottom" constant="133" id="SNJ-Zk-gTj"/>
-                            <constraint firstItem="IKQ-W2-8VB" firstAttribute="top" secondItem="6be-ik-hRD" secondAttribute="bottom" constant="8" id="juR-fW-RjE"/>
-                            <constraint firstItem="xsl-PH-FUM" firstAttribute="top" secondItem="15y-cu-L5r" secondAttribute="bottom" constant="43" id="mNW-PN-k4c"/>
+                            <constraint firstItem="15y-cu-L5r" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="15" id="c4k-rU-41D"/>
+                            <constraint firstItem="6be-ik-hRD" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="15" id="m7k-zg-Kqa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="15y-cu-L5r" secondAttribute="trailing" constant="209" id="qjB-s6-tRv"/>
+                            <constraint firstItem="IKQ-W2-8VB" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="15" id="rKc-iV-Iv0"/>
                             <constraint firstItem="15y-cu-L5r" firstAttribute="leading" secondItem="D5m-Y4-X8p" secondAttribute="leadingMargin" constant="209" id="vmn-Xs-sF8"/>
+                            <constraint firstItem="15y-cu-L5r" firstAttribute="trailing" secondItem="D5m-Y4-X8p" secondAttribute="trailingMargin" constant="-15" id="y9u-te-6o6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

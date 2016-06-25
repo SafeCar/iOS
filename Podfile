@@ -8,4 +8,5 @@ target 'CarEasyApp' do
     pod 'CameraEngine'
     pod 'Starscream'
     pod 'SnapKit'
+    pod 'TextFieldEffects'
 end

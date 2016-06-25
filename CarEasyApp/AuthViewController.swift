@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import TextFieldEffects
 
 class AuthViewController: UIViewController, UITextFieldDelegate {
 
@@ -17,8 +18,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         return nib.instantiateWithOwner(self, options: nil).first as! PanelAuthentificationView
     }()
     
-    @IBOutlet weak var usernameTF: UITextField!
-    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var usernameTF: HoshiTextField!
+    @IBOutlet weak var passwordTF: HoshiTextField!
     @IBOutlet weak var authBtn: UIButton!
     
     @IBAction func auth(sender: AnyObject) {
@@ -42,13 +43,13 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         usernameTF.delegate = self
         passwordTF.delegate = self
         
-        self.view.backgroundColor = UIColor.orangeColor()
-        authBtn.layer.cornerRadius = 6
-        authBtn.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1.00)
+        authBtn.layer.cornerRadius = 10
+        authBtn.backgroundColor = UIColor(red:0.05, green:0.06, blue:0.12, alpha:1.00)
         
         self.view.addSubview(self.headerView)
         self.headerView.snp_makeConstraints { (make) in
-            make.height.equalTo(CGRectGetHeight(UIScreen.mainScreen().bounds) - 100)
+            make.height.equalTo(CGRectGetHeight(UIScreen.mainScreen().bounds) - 80)
             make.width.equalToSuperview()
             make.centerX.equalToSuperview()
             make.top.equalToSuperview()

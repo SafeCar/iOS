@@ -11,6 +11,9 @@
             <rect key="frame" x="0.0" y="0.0" width="232" height="547"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-2611974-1D4F9CDF00000578-738_964x504" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-2H-Noq">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="547"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="umbra rota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-pO-fcx">
                     <rect key="frame" x="8" y="248.5" width="216" height="50"/>
                     <constraints>
@@ -23,8 +26,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="gZI-2H-Noq" secondAttribute="trailing" id="6jK-kv-gpX"/>
                 <constraint firstAttribute="trailing" secondItem="BTJ-pO-fcx" secondAttribute="trailing" constant="8" id="9Dt-jn-IBo"/>
                 <constraint firstItem="BTJ-pO-fcx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="COb-FJ-8xc"/>
+                <constraint firstItem="gZI-2H-Noq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ehN-bW-9wN"/>
+                <constraint firstAttribute="bottom" secondItem="gZI-2H-Noq" secondAttribute="bottom" id="fBH-p4-7gq"/>
+                <constraint firstItem="gZI-2H-Noq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mYY-nD-7Xp"/>
                 <constraint firstItem="BTJ-pO-fcx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="n5r-Aw-VyG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -34,4 +41,7 @@
             <point key="canvasLocation" x="24" y="358.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="article-2611974-1D4F9CDF00000578-738_964x504" width="482" height="252"/>
+    </resources>
 </document>
