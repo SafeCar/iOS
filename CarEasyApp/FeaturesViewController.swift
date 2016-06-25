@@ -34,8 +34,6 @@ class FeaturesViewController: UIViewController {
             self.hakuba[0].reset()
             self.hakuba[0].append(models)
             self.tableview.reloadData()
-        }).addDisposableTo(self.disposeBag)
-        
-        self.viewmodel?.addFeature()
+        }).addDisposableTo(self.disposeBag)        
     }
 }
