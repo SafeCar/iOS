@@ -97,6 +97,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CarEasyApp/RxSwift.framework"
   install_framework "Pods-CarEasyApp/SnapKit.framework"
   install_framework "Pods-CarEasyApp/Starscream.framework"
+  install_framework "Pods-CarEasyApp/SwiftMoment.framework"
   install_framework "Pods-CarEasyApp/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -113,5 +114,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CarEasyApp/RxSwift.framework"
   install_framework "Pods-CarEasyApp/SnapKit.framework"
   install_framework "Pods-CarEasyApp/Starscream.framework"
+  install_framework "Pods-CarEasyApp/SwiftMoment.framework"
   install_framework "Pods-CarEasyApp/TextFieldEffects.framework"
 fi

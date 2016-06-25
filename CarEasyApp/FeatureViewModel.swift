@@ -18,6 +18,7 @@ protocol FeatureViewModelDelegate {
 class FeatureViewModel: FeatureViewModelProtocol {
 
     var models = Variable([FeatureCellViewModel]())
+    var events = Variable([FeatureCellViewModel]())
     var delegate: FeatureViewModelDelegate?
     private let disposeBag = DisposeBag()
     private let socket = WebSocket(url: NSURL(string: "ws://192.168.128.245:4567/event")!)
@@ -41,6 +42,15 @@ class FeatureViewModel: FeatureViewModelProtocol {
             guard let response = response else { return }
             print("response \(response)")
             }.addDisposableTo(self.disposeBag)
+    }
+    
+    func removeFeature(atIndex: Int) {
+        let feature = self.models.value[atIndex].feature
+        let realm = try! Realm()
+        try! realm.write({ 
+            feature.selected = true
+            self.fetchFeatures()
+        })
     }
     
     func startScoket() {
@@ -69,8 +79,6 @@ extension FeatureViewModel: WebSocketDelegate {
         
         let data = try! NSJSONSerialization.dataWithJSONObject(parameters, options: NSJSONWritingOptions.PrettyPrinted)
         let jsonString = NSString(data: data, encoding: NSUTF8StringEncoding)! as String
-        
-        print("JSON STRING : \(jsonString)")
         socket.writeString(jsonString)
     }
     

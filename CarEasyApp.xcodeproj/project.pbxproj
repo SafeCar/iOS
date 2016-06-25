@@ -37,6 +37,9 @@
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
 		BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */; };
 		BBDCCD431D1E744900B39961 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD421D1E744900B39961 /* Coordinator.swift */; };
+		BBF50B771D1F2D24009341B2 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF50B751D1F2D24009341B2 /* EventTableViewCell.swift */; };
+		BBF50B781D1F2D24009341B2 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF50B761D1F2D24009341B2 /* EventTableViewCell.xib */; };
+		BBF50B7A1D1F2D96009341B2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF50B791D1F2D96009341B2 /* Event.swift */; };
 		FC6096302395A25B90CCE2BE /* Pods_CarEasyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CC0CFAB49346FB30464F5 /* Pods_CarEasyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +102,9 @@
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
 		BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BBDCCD421D1E744900B39961 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BBF50B751D1F2D24009341B2 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		BBF50B761D1F2D24009341B2 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		BBF50B791D1F2D96009341B2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D3003E89A4AC8B4A87121A77 /* Pods-CarEasyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarEasyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarEasyApp/Pods-CarEasyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E8C87A49492C005887FE9FE3 /* Pods-CarEasyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarEasyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarEasyApp/Pods-CarEasyApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +225,8 @@
 				BB46A3541D1E8B5300B9A637 /* PanelAuthentificationView.xib */,
 				BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */,
 				BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */,
+				BBF50B751D1F2D24009341B2 /* EventTableViewCell.swift */,
+				BBF50B761D1F2D24009341B2 /* EventTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 			children = (
 				BB46A35B1D1EC35700B9A637 /* Feature.swift */,
 				BB46A35F1D1ED6A000B9A637 /* Permission.swift */,
+				BBF50B791D1F2D96009341B2 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF50B781D1F2D24009341B2 /* EventTableViewCell.xib in Resources */,
 				BB46A3551D1E8B5300B9A637 /* PanelAuthentificationView.xib in Resources */,
 				01239D481D1E2FDE00FC0478 /* LaunchScreen.storyboard in Resources */,
 				BB46A3591D1EC28700B9A637 /* FeatureTableViewCell.xib in Resources */,
@@ -470,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF50B771D1F2D24009341B2 /* EventTableViewCell.swift in Sources */,
 				BB46A3641D1EF38300B9A637 /* AddFeatureViewModel.swift in Sources */,
 				BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */,
 				BB46A3621D1EF37400B9A637 /* AddFeatureViewController.swift in Sources */,
@@ -485,6 +496,7 @@
 				BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */,
 				BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */,
 				BB2FF4FA1D1E425E002FF55C /* CarManager.swift in Sources */,
+				BBF50B7A1D1F2D96009341B2 /* Event.swift in Sources */,
 				BB46A34E1D1E80AB00B9A637 /* FeatureViewModel.swift in Sources */,
 				BB46A3661D1EF39000B9A637 /* AddFeatureViewModelProtocol.swift in Sources */,
 				01239D3E1D1E2FDE00FC0478 /* AppDelegate.swift in Sources */,

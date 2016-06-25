@@ -13,4 +13,5 @@ target 'CarEasyApp' do
     pod 'NSObject+Rx'
     pod 'Hakuba'
     pod 'RealmSwift', '~> 1.0.1'
+    pod 'SwiftMoment'
 end
