@@ -17,11 +17,19 @@ class CarEasyAPI {
         return "http://192.168.128.245:4567/"
     }
     
-    static func auth(username: String, password: String) -> Observable<[String: AnyObject]?> {
-        let url = "http://\(username):\(password)@192.168.128.245:4567/auth_test"
-        
+    private static func makeRequest(url: String) -> Observable<[String: AnyObject]?> {
         return Manager.sharedInstance.rx_JSON(.GET, url).flatMapFirst { (response: AnyObject) -> Observable<[String: AnyObject]?> in
             return Observable.just(response as? [String: AnyObject])
         }
+    }
+    
+    static func auth(username: String, password: String) -> Observable<[String: AnyObject]?> {
+        let url = "http://\(username):\(password)@192.168.128.245:4567/auth_test"
+        return makeRequest(url)
+    }
+    
+    static func permission() -> Observable<[String: AnyObject]?> {
+        let url = "\(baseUrl)permission"
+        return makeRequest(url)
     }
 }
