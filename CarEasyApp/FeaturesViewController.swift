@@ -24,6 +24,7 @@ class FeaturesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.viewmodel?.fetchFeatures()
+        self.viewmodel?.startScoket()
     }
     
     override func viewDidLoad() {

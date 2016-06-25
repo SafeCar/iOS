@@ -14,4 +14,6 @@ protocol FeatureViewModelProtocol: class {
     var delegate: FeatureViewModelDelegate? {get set}
     func fetchFeatures()
     func addFeature()
+    func startScoket()
+    func stopSocket()
 }

@@ -43,15 +43,18 @@ class FeatureViewModel: FeatureViewModelProtocol {
             }.addDisposableTo(self.disposeBag)
     }
     
-    init() {
+    func startScoket() {
         self.socket.delegate = self
         self.socket.connect()
+    }
+    
+    func stopSocket() {
+        self.socket.disconnect()
     }
 }
 
 extension FeatureViewModel: WebSocketDelegate {
     func websocketDidConnect(socket: WebSocket) {
-        print("web socket connected")
         let parameters = [
             "driver_id": "remi",
             "secret_id": "yo",
