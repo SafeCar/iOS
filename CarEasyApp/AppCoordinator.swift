@@ -13,12 +13,30 @@ class AppCoordinator: Coordinator {
     private let window: UIWindow
     
     func start() {
-        let controller = AuthViewController.instanceController(.Main) as! AuthViewController
-        controller.viewmodel = AuthViewModel()
-        self.window.rootViewController = controller
+        self.showAuthentificate()
     }
     
     init(window: UIWindow) {
         self.window = window
+    }
+}
+
+extension AppCoordinator: AuthCoordinatorDelegate {
+    
+    func showAuthentificate() {
+        let authCoordinator = AuthCoordinator(window: self.window)
+        authCoordinator.delegate = self
+        authCoordinator.start()
+    }
+    
+    func didSuccessAuth() {
+        self.showFeatures()
+    }
+}
+
+extension AppCoordinator {
+    
+    func showFeatures() {
+        print("show features after auth success")
     }
 }

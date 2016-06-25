@@ -8,9 +8,30 @@
 
 import UIKit
 
+protocol AuthCoordinatorDelegate {
+    func didSuccessAuth()
+}
+
 class AuthCoordinator: Coordinator {
     
-    func start() {
+    var delegate: AuthCoordinatorDelegate?
+    private let window: UIWindow
     
+    func start() {
+        let controller = AuthViewController.instanceController(.Main) as! AuthViewController
+        controller.viewmodel = AuthViewModel()
+        controller.viewmodel?.delegate = self
+        self.window.rootViewController = controller
+    }
+    
+    init(window: UIWindow) {
+        self.window = window
+    }
+}
+
+extension AuthCoordinator: AuthViewModelDelegate {
+
+    func didSuccessAuthentificate() {
+        self.delegate?.didSuccessAuth()
     }
 }

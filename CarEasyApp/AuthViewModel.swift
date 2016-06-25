@@ -8,6 +8,14 @@
 
 import UIKit
 
-class AuthViewModel: ViewModel, AuthViewModelProtocol {
+protocol AuthViewModelDelegate {
+    func didSuccessAuthentificate()
+}
 
+class AuthViewModel: ViewModel, AuthViewModelProtocol {
+    var delegate: AuthViewModelDelegate?
+    
+    func auth() {
+        self.delegate?.didSuccessAuthentificate()
+    }
 }
