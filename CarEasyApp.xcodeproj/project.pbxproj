@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01239D3E1D1E2FDE00FC0478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01239D3D1D1E2FDE00FC0478 /* AppDelegate.swift */; };
+		01239D401D1E2FDE00FC0478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01239D3F1D1E2FDE00FC0478 /* ViewController.swift */; };
+		01239D431D1E2FDE00FC0478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01239D411D1E2FDE00FC0478 /* Main.storyboard */; };
+		01239D451D1E2FDE00FC0478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01239D441D1E2FDE00FC0478 /* Assets.xcassets */; };
+		01239D481D1E2FDE00FC0478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01239D461D1E2FDE00FC0478 /* LaunchScreen.storyboard */; };
+		01239D531D1E2FDE00FC0478 /* CarEasyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01239D521D1E2FDE00FC0478 /* CarEasyAppTests.swift */; };
+		01239D5E1D1E2FDE00FC0478 /* CarEasyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01239D5D1D1E2FDE00FC0478 /* CarEasyAppUITests.swift */; };
+		01239D761D1E322400FC0478 /* libCarEasyAppsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01239D751D1E322400FC0478 /* libCarEasyAppsSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01239D4F1D1E2FDE00FC0478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01239D321D1E2FDE00FC0478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01239D391D1E2FDE00FC0478;
+			remoteInfo = CarEasyApp;
+		};
+		01239D5A1D1E2FDE00FC0478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01239D321D1E2FDE00FC0478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01239D391D1E2FDE00FC0478;
+			remoteInfo = CarEasyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01239D3A1D1E2FDE00FC0478 /* CarEasyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarEasyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01239D3D1D1E2FDE00FC0478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01239D3F1D1E2FDE00FC0478 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01239D421D1E2FDE00FC0478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01239D441D1E2FDE00FC0478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01239D471D1E2FDE00FC0478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01239D491D1E2FDE00FC0478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01239D4E1D1E2FDE00FC0478 /* CarEasyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarEasyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01239D521D1E2FDE00FC0478 /* CarEasyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEasyAppTests.swift; sourceTree = "<group>"; };
+		01239D541D1E2FDE00FC0478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01239D591D1E2FDE00FC0478 /* CarEasyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarEasyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01239D5D1D1E2FDE00FC0478 /* CarEasyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEasyAppUITests.swift; sourceTree = "<group>"; };
+		01239D5F1D1E2FDE00FC0478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01239D741D1E312F00FC0478 /* Bridge-SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-SDK.h"; sourceTree = "<group>"; };
+		01239D751D1E322400FC0478 /* libCarEasyAppsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCarEasyAppsSDK.a; sourceTree = "<group>"; };
+		01239D771D1E322E00FC0478 /* CEACoreCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEACoreCar.h; sourceTree = "<group>"; };
+		01239D781D1E322E00FC0478 /* CEARequestCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEARequestCode.h; sourceTree = "<group>"; };
+		01239D791D1E322E00FC0478 /* CoreCarSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCarSignals.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01239D371D1E2FDE00FC0478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01239D761D1E322400FC0478 /* libCarEasyAppsSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D4B1D1E2FDE00FC0478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D561D1E2FDE00FC0478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01239D311D1E2FDE00FC0478 = {
+			isa = PBXGroup;
+			children = (
+				01239D3C1D1E2FDE00FC0478 /* CarEasyApp */,
+				01239D511D1E2FDE00FC0478 /* CarEasyAppTests */,
+				01239D5C1D1E2FDE00FC0478 /* CarEasyAppUITests */,
+				01239D3B1D1E2FDE00FC0478 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01239D3B1D1E2FDE00FC0478 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01239D3A1D1E2FDE00FC0478 /* CarEasyApp.app */,
+				01239D4E1D1E2FDE00FC0478 /* CarEasyAppTests.xctest */,
+				01239D591D1E2FDE00FC0478 /* CarEasyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01239D3C1D1E2FDE00FC0478 /* CarEasyApp */ = {
+			isa = PBXGroup;
+			children = (
+				01239D6E1D1E304A00FC0478 /* SDK */,
+				01239D6D1D1E303700FC0478 /* CEA */,
+				01239D3F1D1E2FDE00FC0478 /* ViewController.swift */,
+				01239D3D1D1E2FDE00FC0478 /* AppDelegate.swift */,
+				01239D411D1E2FDE00FC0478 /* Main.storyboard */,
+				01239D441D1E2FDE00FC0478 /* Assets.xcassets */,
+				01239D461D1E2FDE00FC0478 /* LaunchScreen.storyboard */,
+				01239D491D1E2FDE00FC0478 /* Info.plist */,
+			);
+			path = CarEasyApp;
+			sourceTree = "<group>";
+		};
+		01239D511D1E2FDE00FC0478 /* CarEasyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				01239D521D1E2FDE00FC0478 /* CarEasyAppTests.swift */,
+				01239D541D1E2FDE00FC0478 /* Info.plist */,
+			);
+			path = CarEasyAppTests;
+			sourceTree = "<group>";
+		};
+		01239D5C1D1E2FDE00FC0478 /* CarEasyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01239D5D1D1E2FDE00FC0478 /* CarEasyAppUITests.swift */,
+				01239D5F1D1E2FDE00FC0478 /* Info.plist */,
+			);
+			path = CarEasyAppUITests;
+			sourceTree = "<group>";
+		};
+		01239D6D1D1E303700FC0478 /* CEA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CEA;
+			sourceTree = "<group>";
+		};
+		01239D6E1D1E304A00FC0478 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				01239D751D1E322400FC0478 /* libCarEasyAppsSDK.a */,
+				01239D771D1E322E00FC0478 /* CEACoreCar.h */,
+				01239D781D1E322E00FC0478 /* CEARequestCode.h */,
+				01239D791D1E322E00FC0478 /* CoreCarSignals.h */,
+				01239D741D1E312F00FC0478 /* Bridge-SDK.h */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01239D391D1E2FDE00FC0478 /* CarEasyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01239D621D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyApp" */;
+			buildPhases = (
+				01239D361D1E2FDE00FC0478 /* Sources */,
+				01239D371D1E2FDE00FC0478 /* Frameworks */,
+				01239D381D1E2FDE00FC0478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarEasyApp;
+			productName = CarEasyApp;
+			productReference = 01239D3A1D1E2FDE00FC0478 /* CarEasyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01239D4D1D1E2FDE00FC0478 /* CarEasyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01239D651D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyAppTests" */;
+			buildPhases = (
+				01239D4A1D1E2FDE00FC0478 /* Sources */,
+				01239D4B1D1E2FDE00FC0478 /* Frameworks */,
+				01239D4C1D1E2FDE00FC0478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01239D501D1E2FDE00FC0478 /* PBXTargetDependency */,
+			);
+			name = CarEasyAppTests;
+			productName = CarEasyAppTests;
+			productReference = 01239D4E1D1E2FDE00FC0478 /* CarEasyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01239D581D1E2FDE00FC0478 /* CarEasyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01239D681D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyAppUITests" */;
+			buildPhases = (
+				01239D551D1E2FDE00FC0478 /* Sources */,
+				01239D561D1E2FDE00FC0478 /* Frameworks */,
+				01239D571D1E2FDE00FC0478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01239D5B1D1E2FDE00FC0478 /* PBXTargetDependency */,
+			);
+			name = CarEasyAppUITests;
+			productName = CarEasyAppUITests;
+			productReference = 01239D591D1E2FDE00FC0478 /* CarEasyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01239D321D1E2FDE00FC0478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "王笛iOS.Inc";
+				TargetAttributes = {
+					01239D391D1E2FDE00FC0478 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NUBREAZ25J;
+					};
+					01239D4D1D1E2FDE00FC0478 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NUBREAZ25J;
+						TestTargetID = 01239D391D1E2FDE00FC0478;
+					};
+					01239D581D1E2FDE00FC0478 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NUBREAZ25J;
+						TestTargetID = 01239D391D1E2FDE00FC0478;
+					};
+				};
+			};
+			buildConfigurationList = 01239D351D1E2FDE00FC0478 /* Build configuration list for PBXProject "CarEasyApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01239D311D1E2FDE00FC0478;
+			productRefGroup = 01239D3B1D1E2FDE00FC0478 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01239D391D1E2FDE00FC0478 /* CarEasyApp */,
+				01239D4D1D1E2FDE00FC0478 /* CarEasyAppTests */,
+				01239D581D1E2FDE00FC0478 /* CarEasyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01239D381D1E2FDE00FC0478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01239D481D1E2FDE00FC0478 /* LaunchScreen.storyboard in Resources */,
+				01239D451D1E2FDE00FC0478 /* Assets.xcassets in Resources */,
+				01239D431D1E2FDE00FC0478 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D4C1D1E2FDE00FC0478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D571D1E2FDE00FC0478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01239D361D1E2FDE00FC0478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01239D401D1E2FDE00FC0478 /* ViewController.swift in Sources */,
+				01239D3E1D1E2FDE00FC0478 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D4A1D1E2FDE00FC0478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01239D531D1E2FDE00FC0478 /* CarEasyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01239D551D1E2FDE00FC0478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01239D5E1D1E2FDE00FC0478 /* CarEasyAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01239D501D1E2FDE00FC0478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01239D391D1E2FDE00FC0478 /* CarEasyApp */;
+			targetProxy = 01239D4F1D1E2FDE00FC0478 /* PBXContainerItemProxy */;
+		};
+		01239D5B1D1E2FDE00FC0478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01239D391D1E2FDE00FC0478 /* CarEasyApp */;
+			targetProxy = 01239D5A1D1E2FDE00FC0478 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01239D411D1E2FDE00FC0478 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01239D421D1E2FDE00FC0478 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01239D461D1E2FDE00FC0478 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01239D471D1E2FDE00FC0478 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01239D601D1E2FDE00FC0478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01239D611D1E2FDE00FC0478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01239D631D1E2FDE00FC0478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarEasyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarEasyApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarEasyApp/Bridge-SDK.h";
+			};
+			name = Debug;
+		};
+		01239D641D1E2FDE00FC0478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarEasyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarEasyApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarEasyApp/Bridge-SDK.h";
+			};
+			name = Release;
+		};
+		01239D661D1E2FDE00FC0478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarEasyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarEasyApp.app/CarEasyApp";
+			};
+			name = Debug;
+		};
+		01239D671D1E2FDE00FC0478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarEasyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarEasyApp.app/CarEasyApp";
+			};
+			name = Release;
+		};
+		01239D691D1E2FDE00FC0478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarEasyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarEasyApp;
+			};
+			name = Debug;
+		};
+		01239D6A1D1E2FDE00FC0478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarEasyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = None.CarEasyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarEasyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01239D351D1E2FDE00FC0478 /* Build configuration list for PBXProject "CarEasyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01239D601D1E2FDE00FC0478 /* Debug */,
+				01239D611D1E2FDE00FC0478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01239D621D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01239D631D1E2FDE00FC0478 /* Debug */,
+				01239D641D1E2FDE00FC0478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01239D651D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01239D661D1E2FDE00FC0478 /* Debug */,
+				01239D671D1E2FDE00FC0478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01239D681D1E2FDE00FC0478 /* Build configuration list for PBXNativeTarget "CarEasyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01239D691D1E2FDE00FC0478 /* Debug */,
+				01239D6A1D1E2FDE00FC0478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01239D321D1E2FDE00FC0478 /* Project object */;
+}
