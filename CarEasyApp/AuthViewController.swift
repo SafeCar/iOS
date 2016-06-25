@@ -10,7 +10,7 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
-    var viewmodel: AuthViewModel?
+    var viewmodel: AuthViewModelProtocol?
     
     @IBAction func auth(sender: AnyObject) {
         self.viewmodel?.auth()

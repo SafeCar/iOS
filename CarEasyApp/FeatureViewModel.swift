@@ -1,5 +1,5 @@
 //
-//  AuthViewModelProtocol.swift
+//  FeatureViewModel.swift
 //  CarEasyApp
 //
 //  Created by Remi Robert on 25/06/16.
@@ -8,7 +8,6 @@
 
 import UIKit
 
-protocol AuthViewModelProtocol: class {
-    var delegate: AuthViewModelDelegate? {get set}
-    func auth()
+class FeatureViewModel: FeatureViewModelProtocol {
+
 }

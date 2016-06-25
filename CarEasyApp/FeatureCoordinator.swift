@@ -14,6 +14,7 @@ class FeatureCoordinator: Coordinator {
 
     func start() {
         let controller = FeaturesViewController.instanceController(.Main) as! FeaturesViewController
+        controller.viewmodel = FeatureViewModel()
         self.window.rootViewController = controller
     }
     

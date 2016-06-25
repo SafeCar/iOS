@@ -21,6 +21,8 @@
 		BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3471D1E76A600B9A637 /* ViewModel.swift */; };
 		BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */; };
 		BB46A34C1D1E7D1400B9A637 /* FeatureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A34B1D1E7D1400B9A637 /* FeatureCoordinator.swift */; };
+		BB46A34E1D1E80AB00B9A637 /* FeatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A34D1D1E80AB00B9A637 /* FeatureViewModel.swift */; };
+		BB46A3501D1E80CE00B9A637 /* FeatureViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A34F1D1E80CE00B9A637 /* FeatureViewModelProtocol.swift */; };
 		BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */; };
 		BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */; };
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
@@ -72,6 +74,8 @@
 		BB46A3471D1E76A600B9A637 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		BB46A34B1D1E7D1400B9A637 /* FeatureCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCoordinator.swift; sourceTree = "<group>"; };
+		BB46A34D1D1E80AB00B9A637 /* FeatureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureViewModel.swift; sourceTree = "<group>"; };
+		BB46A34F1D1E80CE00B9A637 /* FeatureViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureViewModelProtocol.swift; sourceTree = "<group>"; };
 		BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarEasyAPI.swift; sourceTree = "<group>"; };
 		BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
@@ -209,8 +213,10 @@
 			isa = PBXGroup;
 			children = (
 				BB46A3411D1E753F00B9A637 /* AuthViewModelProtocol.swift */,
+				BB46A34F1D1E80CE00B9A637 /* FeatureViewModelProtocol.swift */,
 				BB46A3431D1E755000B9A637 /* AuthViewModel.swift */,
 				BB46A3471D1E76A600B9A637 /* ViewModel.swift */,
+				BB46A34D1D1E80AB00B9A637 /* FeatureViewModel.swift */,
 			);
 			name = "View models";
 			sourceTree = "<group>";
@@ -428,7 +434,9 @@
 				BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */,
 				BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */,
 				BB2FF4FA1D1E425E002FF55C /* CarManager.swift in Sources */,
+				BB46A34E1D1E80AB00B9A637 /* FeatureViewModel.swift in Sources */,
 				01239D3E1D1E2FDE00FC0478 /* AppDelegate.swift in Sources */,
+				BB46A3501D1E80CE00B9A637 /* FeatureViewModelProtocol.swift in Sources */,
 				BB46A3421D1E753F00B9A637 /* AuthViewModelProtocol.swift in Sources */,
 				BBDCCD431D1E744900B39961 /* Coordinator.swift in Sources */,
 				BB46A3441D1E755000B9A637 /* AuthViewModel.swift in Sources */,
