@@ -146,7 +146,7 @@
         <!--Add a new feature-->
         <scene sceneID="MMq-V1-UWt">
             <objects>
-                <viewController id="n8j-hE-uKP" sceneMemberID="viewController">
+                <viewController id="n8j-hE-uKP" customClass="AddFeatureViewController" customModule="CarEasyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wBQ-q3-u0N"/>
                         <viewControllerLayoutGuide type="bottom" id="ilh-qd-Bjq"/>
@@ -168,7 +168,16 @@
                             <constraint firstItem="ilh-qd-Bjq" firstAttribute="top" secondItem="EWx-gw-9ZV" secondAttribute="bottom" id="uss-Zd-nPg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add a new feature" id="ql1-aF-OoB"/>
+                    <navigationItem key="navigationItem" title="Add a new feature" id="ql1-aF-OoB">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="stop" id="8fk-5u-Zzd">
+                            <connections>
+                                <action selector="dismiis:" destination="n8j-hE-uKP" id="ewb-cC-yKX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="EWx-gw-9ZV" id="cBG-RP-Jd3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTd-ac-fU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

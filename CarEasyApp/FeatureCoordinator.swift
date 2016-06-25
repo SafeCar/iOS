@@ -32,7 +32,19 @@ class FeatureCoordinator: Coordinator {
 extension FeatureCoordinator: FeatureViewModelDelegate {
     
     func showAddFeature() {
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("addNavigationController")
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("addNavigationController") as! UINavigationController
+        
+        let addFeatureController = controller.viewControllers.first as! AddFeatureViewController
+        addFeatureController.viewmodel = AddFeatureViewModel()
+        addFeatureController.viewmodel?.delegate = self
+        
         self.window.rootViewController?.presentViewController(controller, animated: true, completion: nil)
+    }
+}
+
+extension FeatureCoordinator: AddFeatureViewModelDelegate {
+
+    func dismissAddFeature() {
+        self.window.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 }
