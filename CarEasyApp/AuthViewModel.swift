@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol AuthViewModelDelegate {
     func didSuccessAuthentificate()
@@ -14,8 +15,15 @@ protocol AuthViewModelDelegate {
 
 class AuthViewModel: ViewModel, AuthViewModelProtocol {
     var delegate: AuthViewModelDelegate?
+    private let disposeBag = DisposeBag()
     
-    func auth() {
-        self.delegate?.didSuccessAuthentificate()
+    func auth(username: String, password: String) {
+        CarEasyAPI.auth(username, password: password).subscribeNext { (response: [String : AnyObject]?) in
+            guard let response = response else {
+                return
+            }
+            print("response : \(response)")
+            self.delegate?.didSuccessAuthentificate()
+        }.addDisposableTo(self.disposeBag)
     }
 }

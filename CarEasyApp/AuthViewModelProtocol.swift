@@ -10,5 +10,5 @@ import UIKit
 
 protocol AuthViewModelProtocol: class {
     var delegate: AuthViewModelDelegate? {get set}
-    func auth()
+    func auth(username: String, password: String)
 }

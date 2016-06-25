@@ -9,4 +9,6 @@ target 'CarEasyApp' do
     pod 'Starscream'
     pod 'SnapKit'
     pod 'TextFieldEffects'
+    pod 'RxAlamofire'
+    pod 'NSObject+Rx'
 end
