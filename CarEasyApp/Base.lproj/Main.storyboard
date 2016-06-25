@@ -128,11 +128,30 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tzX-Gf-JKW" secondAttribute="trailing" constant="-20" id="eeG-XK-StX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2H2-h6-s6k"/>
                     <connections>
                         <outlet property="tableview" destination="tzX-Gf-JKW" id="s3U-2j-9Zm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCh-6Z-ftg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="389"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qn6-nl-cQD">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="PYU-Vi-08n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7NC-fB-gbm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xjR-cu-Anc" kind="relationship" relationship="rootViewController" id="y7e-mU-jEY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQy-Bw-tNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="389"/>
         </scene>

@@ -18,6 +18,10 @@ class FeaturesViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        self.viewmodel?.fetchFeatures()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.greenColor()
@@ -27,8 +31,6 @@ class FeaturesViewController: UIViewController {
         self.hakuba = Hakuba(tableView: self.tableview)
         self.hakuba.registerCellByNib(FeatureTableViewCell)
         self.hakuba.append(Section())
-        
-        self.viewmodel?.fetchFeatures()
         
         self.viewmodel?.models.asObservable().subscribeNext({ models in
             self.hakuba[0].reset()

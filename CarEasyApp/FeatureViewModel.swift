@@ -29,7 +29,8 @@ class FeatureViewModel: FeatureViewModelProtocol {
     
     func fetchFeatures() {
         let realm = try! Realm()
-        let results = Array(realm.objects(Feature))
+        let filter = "selected = true"
+        let results = Array(realm.objects(Feature).filter(filter))
         
         self.models.value = results.map({ feature -> FeatureCellViewModel in
             return FeatureCellViewModel(feature: feature)
