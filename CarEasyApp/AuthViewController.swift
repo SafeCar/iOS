@@ -8,9 +8,13 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+class AuthViewController: UIViewController, UITextFieldDelegate {
 
     var viewmodel: AuthViewModelProtocol?
+    
+    @IBOutlet weak var usernameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var authBtn: UIButton!
     
     @IBAction func auth(sender: AnyObject) {
         self.viewmodel?.auth()
@@ -18,6 +22,21 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameTF.delegate = self
+        passwordTF.delegate = self
+        
         self.view.backgroundColor = UIColor.orangeColor()
+        authBtn.layer.cornerRadius = 6
+        authBtn.backgroundColor = UIColor.blackColor()
+    }
+    
+    @IBAction func authticate(sender: UIButton) {
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
