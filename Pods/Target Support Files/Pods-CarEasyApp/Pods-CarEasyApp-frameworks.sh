@@ -84,10 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-CarEasyApp/Alamofire.framework"
+  install_framework "Pods-CarEasyApp/Moya.framework"
+  install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"
   install_framework "Pods-CarEasyApp/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-CarEasyApp/Alamofire.framework"
+  install_framework "Pods-CarEasyApp/Moya.framework"
+  install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"
   install_framework "Pods-CarEasyApp/RxSwift.framework"
 fi
