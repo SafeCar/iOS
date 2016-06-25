@@ -25,6 +25,9 @@
 		BB46A3501D1E80CE00B9A637 /* FeatureViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A34F1D1E80CE00B9A637 /* FeatureViewModelProtocol.swift */; };
 		BB46A3531D1E8B3D00B9A637 /* PanelAuthentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3521D1E8B3D00B9A637 /* PanelAuthentificationView.swift */; };
 		BB46A3551D1E8B5300B9A637 /* PanelAuthentificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46A3541D1E8B5300B9A637 /* PanelAuthentificationView.xib */; };
+		BB46A3581D1EC28700B9A637 /* FeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */; };
+		BB46A3591D1EC28700B9A637 /* FeatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */; };
+		BB46A35C1D1EC35700B9A637 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A35B1D1EC35700B9A637 /* Feature.swift */; };
 		BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */; };
 		BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */; };
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
@@ -80,6 +83,9 @@
 		BB46A34F1D1E80CE00B9A637 /* FeatureViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureViewModelProtocol.swift; sourceTree = "<group>"; };
 		BB46A3521D1E8B3D00B9A637 /* PanelAuthentificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelAuthentificationView.swift; sourceTree = "<group>"; };
 		BB46A3541D1E8B5300B9A637 /* PanelAuthentificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PanelAuthentificationView.xib; sourceTree = "<group>"; };
+		BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTableViewCell.swift; sourceTree = "<group>"; };
+		BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeatureTableViewCell.xib; sourceTree = "<group>"; };
+		BB46A35B1D1EC35700B9A637 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarEasyAPI.swift; sourceTree = "<group>"; };
 		BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */,
+				BB46A35A1D1EC34100B9A637 /* Model */,
 				BB46A3511D1E8A5200B9A637 /* View */,
 				BBDCCD411D1E743C00B39961 /* Coordinators */,
 				01239D6E1D1E304A00FC0478 /* SDK */,
@@ -202,8 +209,18 @@
 			children = (
 				BB46A3521D1E8B3D00B9A637 /* PanelAuthentificationView.swift */,
 				BB46A3541D1E8B5300B9A637 /* PanelAuthentificationView.xib */,
+				BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */,
+				BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BB46A35A1D1EC34100B9A637 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB46A35B1D1EC35700B9A637 /* Feature.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BBDCCD3B1D1E732C00B39961 /* View Controllers */ = {
@@ -366,6 +383,7 @@
 			files = (
 				BB46A3551D1E8B5300B9A637 /* PanelAuthentificationView.xib in Resources */,
 				01239D481D1E2FDE00FC0478 /* LaunchScreen.storyboard in Resources */,
+				BB46A3591D1EC28700B9A637 /* FeatureTableViewCell.xib in Resources */,
 				01239D451D1E2FDE00FC0478 /* Assets.xcassets in Resources */,
 				01239D431D1E2FDE00FC0478 /* Main.storyboard in Resources */,
 			);
@@ -441,10 +459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */,
+				BB46A3581D1EC28700B9A637 /* FeatureTableViewCell.swift in Sources */,
 				BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */,
 				BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */,
 				BB46A34C1D1E7D1400B9A637 /* FeatureCoordinator.swift in Sources */,
 				BB46A3531D1E8B3D00B9A637 /* PanelAuthentificationView.swift in Sources */,
+				BB46A35C1D1EC35700B9A637 /* Feature.swift in Sources */,
 				BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */,
 				BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */,
 				BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */,

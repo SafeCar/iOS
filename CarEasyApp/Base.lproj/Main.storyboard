@@ -114,8 +114,23 @@
                     <view key="view" contentMode="scaleToFill" id="3UF-fw-0Pq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tzX-Gf-JKW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4I7-RJ-I3M" firstAttribute="top" secondItem="tzX-Gf-JKW" secondAttribute="bottom" id="9iZ-Sr-bq6"/>
+                            <constraint firstItem="tzX-Gf-JKW" firstAttribute="top" secondItem="3UF-fw-0Pq" secondAttribute="topMargin" id="DfE-Fc-ILZ"/>
+                            <constraint firstItem="tzX-Gf-JKW" firstAttribute="leading" secondItem="3UF-fw-0Pq" secondAttribute="leadingMargin" constant="-20" id="SCK-LS-1JE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tzX-Gf-JKW" secondAttribute="trailing" constant="-20" id="eeG-XK-StX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="tzX-Gf-JKW" id="s3U-2j-9Zm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCh-6Z-ftg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

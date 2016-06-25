@@ -11,4 +11,6 @@ target 'CarEasyApp' do
     pod 'TextFieldEffects'
     pod 'RxAlamofire'
     pod 'NSObject+Rx'
+    pod 'Hakuba'
+    pod 'RealmSwift', '~> 1.0.1'
 end

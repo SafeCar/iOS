@@ -7,13 +7,35 @@
 //
 
 import UIKit
+import Hakuba
+import RxSwift
 
 class FeaturesViewController: UIViewController {
     
+    private var hakuba: Hakuba!
+    private let disposeBag = DisposeBag()
     var viewmodel: FeatureViewModelProtocol?
+    
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.greenColor()
+        
+        self.tableview.tableFooterView = UIView()
+        
+        self.hakuba = Hakuba(tableView: self.tableview)
+        self.hakuba.registerCellByNib(FeatureTableViewCell)
+        self.hakuba.append(Section())
+        
+        self.viewmodel?.fetchFeatures()
+        
+        self.viewmodel?.models.asObservable().subscribeNext({ models in
+            self.hakuba[0].reset()
+            self.hakuba[0].append(models)
+            self.tableview.reloadData()
+        }).addDisposableTo(self.disposeBag)
+        
+        self.viewmodel?.addFeature()
     }
 }

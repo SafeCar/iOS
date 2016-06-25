@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (3.4.1)
   - CameraEngine (0.9.2)
+  - Hakuba (2.1.1)
   - Moya (6.5.0):
     - Moya/Core (= 6.5.0)
   - Moya/Core (6.5.0):
@@ -11,6 +12,11 @@ PODS:
     - RxSwift (~> 2.0)
   - NSObject+Rx (1.2.1):
     - RxSwift (~> 2.1)
+  - Realm (1.0.1):
+    - Realm/Headers (= 1.0.1)
+  - Realm/Headers (1.0.1)
+  - RealmSwift (1.0.1):
+    - Realm (= 1.0.1)
   - Result (2.1.1)
   - RxAlamofire (2.5):
     - RxAlamofire/Core (= 2.5)
@@ -27,9 +33,11 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CameraEngine
+  - Hakuba
   - Moya
   - Moya/RxSwift
   - NSObject+Rx
+  - RealmSwift (~> 1.0.1)
   - RxAlamofire
   - RxCocoa (~> 2.0)
   - RxSwift (~> 2.0)
@@ -40,8 +48,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   CameraEngine: 6c4c1ecaa1c8ac921b1ec5328e550f0e3501fa72
+  Hakuba: bc5a0422290d086c33a6424a26dd58c1a1136e94
   Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
   NSObject+Rx: 5d032a7f161602dec6b82dcf12731e91ce15b8da
+  Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
+  RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
   Result: 822c879f145943320cc80a9a8372378e3d699fe4
   RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7

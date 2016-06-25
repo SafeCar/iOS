@@ -86,8 +86,11 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CarEasyApp/Alamofire.framework"
   install_framework "Pods-CarEasyApp/CameraEngine.framework"
+  install_framework "Pods-CarEasyApp/Hakuba.framework"
   install_framework "Pods-CarEasyApp/Moya.framework"
   install_framework "Pods-CarEasyApp/NSObject_Rx.framework"
+  install_framework "Pods-CarEasyApp/Realm.framework"
+  install_framework "Pods-CarEasyApp/RealmSwift.framework"
   install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxAlamofire.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"
@@ -99,8 +102,11 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CarEasyApp/Alamofire.framework"
   install_framework "Pods-CarEasyApp/CameraEngine.framework"
+  install_framework "Pods-CarEasyApp/Hakuba.framework"
   install_framework "Pods-CarEasyApp/Moya.framework"
   install_framework "Pods-CarEasyApp/NSObject_Rx.framework"
+  install_framework "Pods-CarEasyApp/Realm.framework"
+  install_framework "Pods-CarEasyApp/RealmSwift.framework"
   install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxAlamofire.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"

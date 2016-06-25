@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol FeatureViewModelProtocol: class {
-
+    var models: Variable<[FeatureCellViewModel]> {get}
+    func fetchFeatures()
+    func addFeature()
 }

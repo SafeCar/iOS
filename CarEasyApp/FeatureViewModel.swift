@@ -7,7 +7,39 @@
 //
 
 import UIKit
+import RxSwift
+import RealmSwift
 
 class FeatureViewModel: FeatureViewModelProtocol {
 
+    var models = Variable([FeatureCellViewModel]())
+    private let disposeBag = DisposeBag()
+    
+    func addFeature() {
+        let newFeature = Feature()
+        newFeature.name = "feature"
+
+        let realm = try! Realm()
+        
+        try! realm.write {
+            realm.add(newFeature)
+            self.fetchFeatures()
+        }
+    }
+    
+    func fetchFeatures() {
+        let realm = try! Realm()
+        let results = Array(realm.objects(Feature))
+        
+        self.models.value = results.map({ feature -> FeatureCellViewModel in
+            return FeatureCellViewModel(feature: feature)
+        })
+    }
+    
+    func permission() {
+        CarEasyAPI.permission().subscribeNext { (response: [String : AnyObject]?) in
+            guard let response = response else { return }
+            print("response \(response)")
+            }.addDisposableTo(self.disposeBag)
+    }
 }
