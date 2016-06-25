@@ -128,7 +128,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tzX-Gf-JKW" secondAttribute="trailing" constant="-20" id="eeG-XK-StX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2H2-h6-s6k"/>
+                    <navigationItem key="navigationItem" id="2H2-h6-s6k">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hsu-RK-1O8">
+                            <connections>
+                                <action selector="addFeature:" destination="xjR-cu-Anc" id="9xB-RC-0A1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="tzX-Gf-JKW" id="s3U-2j-9Zm"/>
                     </connections>
@@ -136,6 +142,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCh-6Z-ftg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1829" y="389"/>
+        </scene>
+        <!--Add a new feature-->
+        <scene sceneID="MMq-V1-UWt">
+            <objects>
+                <viewController id="n8j-hE-uKP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wBQ-q3-u0N"/>
+                        <viewControllerLayoutGuide type="bottom" id="ilh-qd-Bjq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2iu-ho-Bvv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EWx-gw-9ZV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EWx-gw-9ZV" firstAttribute="top" secondItem="wBQ-q3-u0N" secondAttribute="bottom" id="C3F-os-nK9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EWx-gw-9ZV" secondAttribute="trailing" constant="-20" id="Tja-pq-n4c"/>
+                            <constraint firstItem="EWx-gw-9ZV" firstAttribute="leading" secondItem="2iu-ho-Bvv" secondAttribute="leadingMargin" constant="-20" id="qQv-Pn-miv"/>
+                            <constraint firstItem="ilh-qd-Bjq" firstAttribute="top" secondItem="EWx-gw-9ZV" secondAttribute="bottom" id="uss-Zd-nPg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add a new feature" id="ql1-aF-OoB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTd-ac-fU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="1083"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qn6-nl-cQD">
@@ -154,6 +191,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQy-Bw-tNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="389"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sy4-b4-d3E">
+            <objects>
+                <navigationController storyboardIdentifier="addNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ku6-ZX-cdm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0xn-I4-cH4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n8j-hE-uKP" kind="relationship" relationship="rootViewController" id="7t2-nO-4Ng"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPw-Db-7Ki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="1083"/>
         </scene>
     </scenes>
 </document>

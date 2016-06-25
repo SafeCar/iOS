@@ -11,6 +11,7 @@ import RxSwift
 
 protocol FeatureViewModelProtocol: class {
     var models: Variable<[FeatureCellViewModel]> {get}
+    var delegate: FeatureViewModelDelegate? {get set}
     func fetchFeatures()
     func addFeature()
 }

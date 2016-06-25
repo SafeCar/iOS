@@ -15,6 +15,7 @@ class FeatureCoordinator: Coordinator {
     func start() {
         let controller = FeaturesViewController.instanceController(.Main) as! FeaturesViewController
         controller.viewmodel = FeatureViewModel()
+        controller.viewmodel?.delegate = self
         
         let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("navigationController") as! UINavigationController
         
@@ -25,5 +26,13 @@ class FeatureCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
+    }
+}
+
+extension FeatureCoordinator: FeatureViewModelDelegate {
+    
+    func showAddFeature() {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("addNavigationController")
+        self.window.rootViewController?.presentViewController(controller, animated: true, completion: nil)
     }
 }

@@ -10,21 +10,18 @@ import UIKit
 import RxSwift
 import RealmSwift
 
+protocol FeatureViewModelDelegate {
+    func showAddFeature()
+}
+
 class FeatureViewModel: FeatureViewModelProtocol {
 
     var models = Variable([FeatureCellViewModel]())
+    var delegate: FeatureViewModelDelegate?
     private let disposeBag = DisposeBag()
     
     func addFeature() {
-        let newFeature = Feature()
-        newFeature.name = "feature"
-
-        let realm = try! Realm()
-        
-        try! realm.write {
-            realm.add(newFeature)
-            self.fetchFeatures()
-        }
+        self.delegate?.showAddFeature()
     }
     
     func fetchFeatures() {

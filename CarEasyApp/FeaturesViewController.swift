@@ -18,6 +18,10 @@ class FeaturesViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
+    @IBAction func addFeature(sender: AnyObject) {
+        self.viewmodel?.addFeature()
+    }
+    
     override func viewWillAppear(animated: Bool) {
         self.viewmodel?.fetchFeatures()
     }
@@ -26,6 +30,7 @@ class FeaturesViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.greenColor()
         
+        self.title = "Umbra rota"
         self.tableview.tableFooterView = UIView()
         
         self.hakuba = Hakuba(tableView: self.tableview)
