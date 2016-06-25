@@ -10,8 +10,9 @@ import UIKit
 import Moya
 
 enum CarEasyAPI {
-
+    case Auth
 }
 
 extension CarEasyAPI: TargetType {
+    
 }

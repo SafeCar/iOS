@@ -5,4 +5,5 @@ target 'CarEasyApp' do
     pod 'Alamofire'
     pod 'Moya'
     pod 'Moya/RxSwift'
+    pod 'CameraEngine'
 end
