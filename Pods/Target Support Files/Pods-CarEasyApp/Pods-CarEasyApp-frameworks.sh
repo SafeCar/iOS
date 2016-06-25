@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"
   install_framework "Pods-CarEasyApp/RxSwift.framework"
+  install_framework "Pods-CarEasyApp/Starscream.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CarEasyApp/Alamofire.framework"
@@ -98,4 +99,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CarEasyApp/Result.framework"
   install_framework "Pods-CarEasyApp/RxCocoa.framework"
   install_framework "Pods-CarEasyApp/RxSwift.framework"
+  install_framework "Pods-CarEasyApp/Starscream.framework"
 fi
