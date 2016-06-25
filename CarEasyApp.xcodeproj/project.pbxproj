@@ -28,6 +28,7 @@
 		BB46A3581D1EC28700B9A637 /* FeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */; };
 		BB46A3591D1EC28700B9A637 /* FeatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */; };
 		BB46A35C1D1EC35700B9A637 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A35B1D1EC35700B9A637 /* Feature.swift */; };
+		BB46A3601D1ED6A000B9A637 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A35F1D1ED6A000B9A637 /* Permission.swift */; };
 		BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */; };
 		BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */; };
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
@@ -86,6 +87,7 @@
 		BB46A3561D1EC28700B9A637 /* FeatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTableViewCell.swift; sourceTree = "<group>"; };
 		BB46A3571D1EC28700B9A637 /* FeatureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeatureTableViewCell.xib; sourceTree = "<group>"; };
 		BB46A35B1D1EC35700B9A637 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		BB46A35F1D1ED6A000B9A637 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 		BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarEasyAPI.swift; sourceTree = "<group>"; };
 		BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				BB46A35B1D1EC35700B9A637 /* Feature.swift */,
+				BB46A35F1D1ED6A000B9A637 /* Permission.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */,
 				BB46A3581D1EC28700B9A637 /* FeatureTableViewCell.swift in Sources */,
 				BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */,
+				BB46A3601D1ED6A000B9A637 /* Permission.swift in Sources */,
 				BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */,
 				BB46A34C1D1E7D1400B9A637 /* FeatureCoordinator.swift in Sources */,
 				BB46A3531D1E8B3D00B9A637 /* PanelAuthentificationView.swift in Sources */,
