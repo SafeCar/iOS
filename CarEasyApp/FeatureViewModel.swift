@@ -18,7 +18,7 @@ protocol FeatureViewModelDelegate {
 class FeatureViewModel: FeatureViewModelProtocol {
 
     var models = Variable([FeatureCellViewModel]())
-    var events = Variable([FeatureCellViewModel]())
+    var events = Variable([EventCellViewModel]())
     var delegate: FeatureViewModelDelegate?
     private let disposeBag = DisposeBag()
     private let socket = WebSocket(url: NSURL(string: "ws://192.168.128.245:4567/event")!)
@@ -87,6 +87,10 @@ extension FeatureViewModel: WebSocketDelegate {
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+        print("text : \(text)")
+        let value = text.componentsSeparatedByString(":").last?.componentsSeparatedByString("\"")[1]
+        let event = Event(message: value!)
+        self.events.value.append(EventCellViewModel(event: event))
         print("web socket get message : \(text)")
     }
     

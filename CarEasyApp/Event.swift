@@ -10,7 +10,7 @@ import UIKit
 
 class Event {
     var message: String?
-    var date: NSDate?
+    var date: NSDate
     
     init(message: String) {
         self.message = message

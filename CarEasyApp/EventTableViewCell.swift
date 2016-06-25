@@ -8,6 +8,7 @@
 
 import UIKit
 import Hakuba
+import SwiftMoment
 
 class EventCellViewModel: CellModel {
     
@@ -15,13 +16,18 @@ class EventCellViewModel: CellModel {
     
     init(event: Event) {
         self.event = event
-        super.init(cell: EventTableViewCell.self, height: 44, selectionHandler: nil)
+        super.init(cell: EventTableViewCell.self, height: 100, selectionHandler: nil)
+
+        self.dynamicHeightEnabled = true
     }
 }
 
 class EventTableViewCell: Cell, CellType {
 
     typealias CellModel = EventCellViewModel
+    
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var labelMessage: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,6 +38,8 @@ class EventTableViewCell: Cell, CellType {
             return
         }
         let event = cellmodel.event
-        self.textLabel?.text = event.message
+        self.labelMessage.text = event.message
+        let m = moment(event.date)
+        self.labelDate.text = m.format("yyyy'-'MM'-'dd'T'HH':'mm'")
     }
 }

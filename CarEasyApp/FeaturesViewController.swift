@@ -45,6 +45,7 @@ class FeaturesViewController: UIViewController {
         
         self.title = "Umbra rota"
         self.tableview.tableFooterView = UIView()
+        self.tableview.separatorStyle = .None
         
         self.hakuba = Hakuba(tableView: self.tableview)
         self.hakuba.registerCellByNib(FeatureTableViewCell)
@@ -52,34 +53,17 @@ class FeaturesViewController: UIViewController {
         self.hakuba.append(Section())
         
         self.viewmodel?.models.asObservable().subscribeNext({ models in
+            if self.segmentControl.selectedSegmentIndex == 0 { return }
             self.hakuba[0].reset()
             self.hakuba[0].append(models)
             self.tableview.reloadData()
         }).addDisposableTo(self.disposeBag)
         
-        self.tableview.delegate = self
-    }
-}
-
-extension FeaturesViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        let action = UITableViewRowAction(style: .Destructive, title: "Remove") { (_, indexPath: NSIndexPath) in
-            self.viewmodel?.removeFeature(indexPath.row)
-        }
-        return [action]
-    }
-    
-    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-        return .Delete
-     }
-    
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            self.viewmodel?.removeFeature(indexPath.row)
-        }
-    }
-    
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
+        self.viewmodel?.events.asObservable().subscribeNext({ models in
+            if self.segmentControl.selectedSegmentIndex == 1 { return }
+            self.hakuba[0].reset()
+            self.hakuba[0].append(models)
+            self.tableview.reloadData()
+        }).addDisposableTo(self.disposeBag)
     }
 }
