@@ -41,6 +41,9 @@
                                     <constraint firstAttribute="height" constant="30" id="fCo-mD-8XL"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="auth:" destination="d77-tQ-EEl" eventType="touchUpInside" id="Unj-0S-DtS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
