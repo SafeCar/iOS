@@ -9,7 +9,6 @@
 import UIKit
 
 typealias SuccessBlock = ((value: [NSObject : AnyObject]?) -> Void)
-typealias SuccessMultipleBlock = ((value: [NSObject : AnyObject]?) -> Void)
 typealias ErrorBlock = ((error: NSError?) -> Void)
 
 class CarManager {
