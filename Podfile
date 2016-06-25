@@ -7,4 +7,5 @@ target 'CarEasyApp' do
     pod 'Moya/RxSwift'
     pod 'CameraEngine'
     pod 'Starscream'
+    pod 'SnapKit'
 end
