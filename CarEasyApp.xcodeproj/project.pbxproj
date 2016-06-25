@@ -20,6 +20,7 @@
 		BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */; };
 		BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3471D1E76A600B9A637 /* ViewModel.swift */; };
 		BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */; };
+		BB46A34C1D1E7D1400B9A637 /* FeatureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A34B1D1E7D1400B9A637 /* FeatureCoordinator.swift */; };
 		BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */; };
 		BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */; };
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
@@ -70,6 +71,7 @@
 		BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		BB46A3471D1E76A600B9A637 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		BB46A34B1D1E7D1400B9A637 /* FeatureCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCoordinator.swift; sourceTree = "<group>"; };
 		BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarEasyAPI.swift; sourceTree = "<group>"; };
 		BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */,
 				BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */,
+				BB46A34B1D1E7D1400B9A637 /* FeatureCoordinator.swift */,
 				BBDCCD421D1E744900B39961 /* Coordinator.swift */,
 			);
 			name = Coordinators;
@@ -419,6 +422,7 @@
 				BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */,
 				BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */,
 				BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */,
+				BB46A34C1D1E7D1400B9A637 /* FeatureCoordinator.swift in Sources */,
 				BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */,
 				BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */,
 				BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */,

@@ -37,6 +37,7 @@ extension AppCoordinator: AuthCoordinatorDelegate {
 extension AppCoordinator {
     
     func showFeatures() {
-        print("show features after auth success")
+        let featureCoordinator = FeatureCoordinator(window: self.window)
+        featureCoordinator.start()
     }
 }

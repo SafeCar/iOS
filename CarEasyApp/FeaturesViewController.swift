@@ -9,8 +9,9 @@
 import UIKit
 
 class FeaturesViewController: UIViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.greenColor()
     }
 }

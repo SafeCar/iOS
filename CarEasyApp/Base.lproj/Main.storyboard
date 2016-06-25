@@ -42,7 +42,7 @@
         <!--Features View Controller-->
         <scene sceneID="nJc-iU-7MS">
             <objects>
-                <viewController id="xjR-cu-Anc" customClass="FeaturesViewController" customModule="CarEasyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturesViewController" id="xjR-cu-Anc" customClass="FeaturesViewController" customModule="CarEasyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nRH-hc-srf"/>
                         <viewControllerLayoutGuide type="bottom" id="4I7-RJ-I3M"/>
