@@ -15,9 +15,16 @@
 		01239D5E1D1E2FDE00FC0478 /* CarEasyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01239D5D1D1E2FDE00FC0478 /* CarEasyAppUITests.swift */; };
 		01239D761D1E322400FC0478 /* libCarEasyAppsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01239D751D1E322400FC0478 /* libCarEasyAppsSDK.a */; };
 		BB2FF4FA1D1E425E002FF55C /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FF4F91D1E425E002FF55C /* CarManager.swift */; };
+		BB46A3421D1E753F00B9A637 /* AuthViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3411D1E753F00B9A637 /* AuthViewModelProtocol.swift */; };
+		BB46A3441D1E755000B9A637 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3431D1E755000B9A637 /* AuthViewModel.swift */; };
+		BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */; };
+		BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3471D1E76A600B9A637 /* ViewModel.swift */; };
+		BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */; };
 		BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */; };
 		BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */; };
 		BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */; };
+		BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */; };
+		BBDCCD431D1E744900B39961 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDCCD421D1E744900B39961 /* Coordinator.swift */; };
 		FC6096302395A25B90CCE2BE /* Pods_CarEasyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CC0CFAB49346FB30464F5 /* Pods_CarEasyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +65,16 @@
 		01239D791D1E322E00FC0478 /* CoreCarSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCarSignals.h; sourceTree = "<group>"; };
 		562CC0CFAB49346FB30464F5 /* Pods_CarEasyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarEasyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FF4F91D1E425E002FF55C /* CarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
+		BB46A3411D1E753F00B9A637 /* AuthViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModelProtocol.swift; sourceTree = "<group>"; };
+		BB46A3431D1E755000B9A637 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		BB46A3471D1E76A600B9A637 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarEasyAPI.swift; sourceTree = "<group>"; };
 		BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
+		BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BBDCCD421D1E744900B39961 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D3003E89A4AC8B4A87121A77 /* Pods-CarEasyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarEasyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarEasyApp/Pods-CarEasyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E8C87A49492C005887FE9FE3 /* Pods-CarEasyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarEasyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarEasyApp/Pods-CarEasyApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,10 +131,12 @@
 		01239D3C1D1E2FDE00FC0478 /* CarEasyApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB46A3491D1E77B700B9A637 /* UIViewControllerExtensions.swift */,
+				BBDCCD411D1E743C00B39961 /* Coordinators */,
 				01239D6E1D1E304A00FC0478 /* SDK */,
-				BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */,
-				BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */,
-				BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */,
+				BBDCCD3C1D1E733A00B39961 /* Network */,
+				BBDCCD3E1D1E734700B39961 /* View models */,
+				BBDCCD3B1D1E732C00B39961 /* View Controllers */,
 				BB2FF4F91D1E425E002FF55C /* CarManager.swift */,
 				01239D3D1D1E2FDE00FC0478 /* AppDelegate.swift */,
 				01239D411D1E2FDE00FC0478 /* Main.storyboard */,
@@ -168,6 +184,43 @@
 				E8C87A49492C005887FE9FE3 /* Pods-CarEasyApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBDCCD3B1D1E732C00B39961 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCCD371D1E5C9C00B39961 /* AuthViewController.swift */,
+				BBDCCD391D1E5D2200B39961 /* FeaturesViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BBDCCD3C1D1E733A00B39961 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCCD351D1E5C2F00B39961 /* CarEasyAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		BBDCCD3E1D1E734700B39961 /* View models */ = {
+			isa = PBXGroup;
+			children = (
+				BB46A3411D1E753F00B9A637 /* AuthViewModelProtocol.swift */,
+				BB46A3431D1E755000B9A637 /* AuthViewModel.swift */,
+				BB46A3471D1E76A600B9A637 /* ViewModel.swift */,
+			);
+			name = "View models";
+			sourceTree = "<group>";
+		};
+		BBDCCD411D1E743C00B39961 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCCD3F1D1E736600B39961 /* AppCoordinator.swift */,
+				BB46A3451D1E767700B9A637 /* AuthCoordinator.swift */,
+				BBDCCD421D1E744900B39961 /* Coordinator.swift */,
+			);
+			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		BCDA287D9823D0EF0CD786F6 /* Frameworks */ = {
@@ -363,11 +416,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB46A3461D1E767700B9A637 /* AuthCoordinator.swift in Sources */,
+				BBDCCD401D1E736600B39961 /* AppCoordinator.swift in Sources */,
 				BBDCCD3A1D1E5D2200B39961 /* FeaturesViewController.swift in Sources */,
+				BB46A3481D1E76A600B9A637 /* ViewModel.swift in Sources */,
+				BB46A34A1D1E77B700B9A637 /* UIViewControllerExtensions.swift in Sources */,
 				BBDCCD381D1E5C9C00B39961 /* AuthViewController.swift in Sources */,
 				BBDCCD361D1E5C2F00B39961 /* CarEasyAPI.swift in Sources */,
 				BB2FF4FA1D1E425E002FF55C /* CarManager.swift in Sources */,
 				01239D3E1D1E2FDE00FC0478 /* AppDelegate.swift in Sources */,
+				BB46A3421D1E753F00B9A637 /* AuthViewModelProtocol.swift in Sources */,
+				BBDCCD431D1E744900B39961 /* Coordinator.swift in Sources */,
+				BB46A3441D1E755000B9A637 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

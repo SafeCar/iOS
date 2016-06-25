@@ -12,9 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var appCoordinator: AppCoordinator!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         CarManager.setTokenBasePath("1-2")
+        
+        self.window = UIWindow()
+        self.appCoordinator = AppCoordinator(window: self.window!)
+        self.appCoordinator.start()
+        self.window?.makeKeyAndVisible()
         return true
     }
 }

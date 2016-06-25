@@ -10,7 +10,10 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
+    var viewmodel: AuthViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.orangeColor()
     }
 }
